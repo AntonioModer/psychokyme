@@ -9,7 +9,7 @@
     
     <meta name="author" content="adnzzzzZ">
     
-    <meta name="description" content="This post explains behavior trees as I understood them.">
+    <meta name="description" content="This post explains behavior trees as I understood them">
     
     
     
@@ -89,7 +89,7 @@
     </p>
   <p class="article-time">
     <time datetime="2014-08-17T00:05:00.000Z" itemprop="datePublished">Aug 16 2014</time>
-    Updated:<time datetime="2015-01-09T07:14:09.000Z" itemprop="dateModified">Jan 9 2015</time>
+    Updated:<time datetime="2015-01-09T07:17:08.000Z" itemprop="dateModified">Jan 9 2015</time>
     
   </p>
 </header>
@@ -102,7 +102,7 @@
 		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Introduction"><span class="toc-number">1.</span> <span class="toc-text">Introduction</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Behavior"><span class="toc-number">2.</span> <span class="toc-text">Behavior</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Root"><span class="toc-number">3.</span> <span class="toc-text">Root</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Action"><span class="toc-number">4.</span> <span class="toc-text">Action</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Sequence"><span class="toc-number">5.</span> <span class="toc-text">Sequence</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Selector"><span class="toc-number">6.</span> <span class="toc-text">Selector</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Decorator"><span class="toc-number">7.</span> <span class="toc-text">Decorator</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Example"><span class="toc-number">8.</span> <span class="toc-text">Example</span></a></li></ol>
 		</div>
 		
-		<p>This post explains behavior trees as I understood them.<a id="more"></a> There are very few behavior tree related tutorials out there that have both code examples as well as concise explanations. The best ones I could find are <a href="https://www.youtube.com/watch?v=n4aREFb3SsU" target="_blank" rel="external">here</a> and <a href="http://aigamedev.com/insider/presentations/behavior-trees/" target="_blank" rel="external">here</a>, and while they’re really good, when going through them I surely had many doubts that the lack of other decent tutorials didn’t help answering. With that in mind, this article provides another source that people can use as a reference as they learn about behavior trees. Part 1 (this one) will deal with explaining what behavior trees are and how you can implement them, while Part 2 will use them to build a simple yet complete enemy behavior. Most of the code used here uses <a href="https://github.com/aigamedev/btsk" target="_blank" rel="external">this</a> one as a reference with some slight changes. And I learned about behavior trees initially from <a href="http://www.gamasutra.com/blogs/ChrisSimpson/20140717/221339/Behavior_trees_for_AI_How_they_work.php" target="_blank" rel="external">this</a> article! Give it a quick read first, since I think it does a better job at explaining the basics than I do here.</p>
+		<p>This post explains behavior trees as I understood them<a id="more"></a>. There are very few behavior tree related tutorials out there that have both code examples as well as concise explanations. The best ones I could find are <a href="https://www.youtube.com/watch?v=n4aREFb3SsU" target="_blank" rel="external">here</a> and <a href="http://aigamedev.com/insider/presentations/behavior-trees/" target="_blank" rel="external">here</a>, and while they’re really good, when going through them I surely had many doubts that the lack of other decent tutorials didn’t help answering. With that in mind, this article provides another source that people can use as a reference as they learn about behavior trees. Part 1 (this one) will deal with explaining what behavior trees are and how you can implement them, while Part 2 will use them to build a simple yet complete enemy behavior. Most of the code used here uses <a href="https://github.com/aigamedev/btsk" target="_blank" rel="external">this</a> one as a reference with some slight changes. And I learned about behavior trees initially from <a href="http://www.gamasutra.com/blogs/ChrisSimpson/20140717/221339/Behavior_trees_for_AI_How_they_work.php" target="_blank" rel="external">this</a> article! Give it a quick read first, since I think it does a better job at explaining the basics than I do here.</p>
 <h2 id="Introduction">Introduction</h2>
 <p>Behavior Trees are used to describe the behavior of entities in a game in a hopefully intuitive manner. They do this by using the following definitions:</p>
 <ul>
