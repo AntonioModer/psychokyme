@@ -555,7 +555,7 @@ header nav ul li a {
   }
 }
 header nav ul li a:hover {
-  background: #161719;
+  background: #1d1f21;
   color: #70b2f2;
 }
 .shownav {
@@ -1014,6 +1014,7 @@ article .article-content figure img {
   height: auto;
   vertical-align: middle;
   padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 @media only screen and (min-width: 1024px) {
   article .article-content img,
@@ -1274,6 +1275,7 @@ footer.article-footer {
 }
 .article-tags {
   color: #d6d6d6;
+  padding-bottom: 3em;
 }
 .article-tags span {
   position: relative;
@@ -1299,7 +1301,6 @@ footer.article-footer {
   float: left;
   padding: 0 0.3em;
   margin: 0.3em;
-  background: #e6e6e6;
 }
 .article-tags a:hover {
   color: #fff;
@@ -1338,14 +1339,21 @@ footer.article-footer {
   display: block;
   overflow: hidden;
 }
+.article-nav .prev,
+.article-nav .next {
+  padding-bottom: 1em;
+}
 .article-nav .prev a:hover,
 .article-nav .next a:hover {
-  background: #4d7bde;
   color: #fff;
+  background: #4d7bde;
 }
 .article-nav .prev {
   width: 100%;
   float: left;
+}
+.article-nav .prev a {
+  padding-left: 1em;
 }
 .article-nav .prev strong {
   padding-left: 1.8em;
@@ -1367,6 +1375,9 @@ footer.article-footer {
   width: 100%;
   float: left;
   text-align: left;
+}
+.article-nav .next a {
+  padding-right: 1em;
 }
 .article-nav .next strong {
   padding-left: 1.5em;
@@ -1605,8 +1616,8 @@ section.comment {
   background: #4d7bde;
 }
 .tagslist ul li a:hover {
-  color: #70b2f2;
-  background: #1d1f21;
+  color: #fff;
+  background: #70b2f2;
 }
 .rsspart {
   background: #4d7bde;
@@ -1633,8 +1644,8 @@ section.comment {
   text-align: center;
 }
 .rsspart a:hover {
-  color: #70b2f2;
-  background: #1d1f21;
+  color: #fff;
+  background: #70b2f2;
 }
 .rsspart a::before {
   font-family: "FontAwesome";
