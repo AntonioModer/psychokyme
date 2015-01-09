@@ -24,7 +24,7 @@ rss: /atom.xml ## RSS address.
 imglogo:
   enable: true             ## display image logo true/false.
   src: img/logo.png        ## `.svg` and `.png` are recommended,please put image into the theme folder `/yaht/source/img`.
-favicon:  ## size:32px*32px,`.ico` is recommended,please put image into the theme folder `/yaht/source/img`.
+favicon: img/favicon.ico   ## size:32px*32px,`.ico` is recommended,please put image into the theme folder `/yaht/source/img`.
 apple_icon: ## size:114px*114px,please put image into the theme folder `/yaht/source/img`.
 
 #### Author Avatar Picture
@@ -64,8 +64,8 @@ author:
   intro_line1: "" ## eg: "Hello ,I'm Larry Page in Google."
   intro_line2: "" ## eg: "This is my blog,believe it or not."
   weibo:      ## e.g. 436062867 for http://weibo.com/436062867
-  twitter:    ## e.g. zhyu for https://twitter.com/zhyu
-  github:     ## e.g. zhyu for https://github.com/zhyu
+  twitter:    adnzzzzZ ## e.g. zhyu for https://twitter.com/zhyu
+  github:     adonaac ## e.g. zhyu for https://github.com/zhyu
   facebook:   ## e.g. sora.zhyu for https://favebook.com/sora.zhyu
   tsina:      ## e.g. 1664838973  Your weibo ID,It will be used in share button.
 
@@ -75,8 +75,8 @@ duoshuo:
   short_name:    ## duoshuo short name.
 
 disqus:
-  enable: false  ## disqus.com
-  short_name:    ## for disqus short name.
+  enable: true ## disqus.com
+  short_name: mylittlepeacefulgroveofregretandshame ## for disqus short name.
 
 #### Share button
 jiathis:

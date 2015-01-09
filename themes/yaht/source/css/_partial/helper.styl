@@ -139,6 +139,7 @@ footer.article-footer
 
 .article-tags
   color lighten(color-gray,20%)
+  padding-bottom 3em
   span
     position relative
     float left
@@ -154,7 +155,6 @@ footer.article-footer
     float left
     padding 0 0.3em
     margin 0.3em
-    background lighten(color-gray,50%)
     &:hover
       color color-white
       background color-blue
@@ -186,13 +186,17 @@ footer.article-footer
     display block
     overflow hidden
   .prev,.next
+    padding-bottom 1em
     a
       &:hover
-        background color-blue
         color color-white
+        background color-blue
   .prev
+
     width 100%
     float left
+    a
+      padding-left 1em
     strong
       padding-left 1.8em
     span:before
@@ -207,6 +211,8 @@ footer.article-footer
     width 100%
     float left
     text-align left
+    a
+      padding-right 1em
     strong
       padding-left 1.5em
     span:before
