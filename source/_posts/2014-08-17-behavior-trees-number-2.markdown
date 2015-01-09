@@ -64,7 +64,7 @@ We use a sequence to bind everything together. If at any point *moveToPoint* fai
     ...
 {% endcodeblock %}
 
-{% img center http://puu.sh/aWCVB/e243d7dddd.gif %}
+{% img center /images/idle-wander.gif %}
 
 ## TK Practice
 
@@ -169,7 +169,7 @@ And then after that we tie it all to a sequence. And since we want the enemy to 
 
 {% img center /images/tk-practice-wander.png %}
 
-{% img center http://puu.sh/aWNlJ/e24bfbfcde.gif %}
+{% img center /images/box-w.gif %}
 
 There's still a problem, though. As you can see in the gif, whenever the NPC finds a box once he'll be addicted to lifting it. That's because there are no checks in place to keep this from happening. The *anyAround* query will always return success after the first time, because there will be a box around, and so the whole lifting sequence will be performed and it will repeat again forever. To prevent this from happening we can either try creating a decorator or performing an additional check by creating another action. I'll choose to go with the decorator one:
 
@@ -221,7 +221,7 @@ Now whenever *anyAround* succeeds twice in a row a failure will be forced. That 
 
 {% img center /images/dont-succeed.png %}
 
-{% img center http://puu.sh/aWWTs/8a5b52d27c.gif %}
+{% img center /images/box-w3.gif %}
 
 And so the whole tree looks like this:
 
@@ -415,7 +415,7 @@ end
 
 With this, NPCs should move around randomly, find boxes and lift them with their TK sometimes, and whenever they get close to a *FriendMeetingPoint* they'll go there to try to talk to someone. There's the possibility they'll be stuck there forever if no one shows up, but that's a detail that can be fixed by adding a time limit to the *WaitUntil* decorator for instance. Other than that we have a working implementation of an idle behavior for a particular NPC of this game. It wasn't super simple but to me at least it beats the approach I was taking before! (which was just hardcoding everything)
 
-{% img center http://puu.sh/aX9ZD/9fd7b0412a.gif %}
+{% img center /images/talk4.gif %}
 
 The whole tree now looks like this:
 
@@ -500,7 +500,7 @@ We tie everything up with a selector at the top and by placing the suspicious be
     ...
 {% endcodeblock %}
 
-{% img center http://puu.sh/aXhFp/2e471c82db.gif %}
+{% img center /images/susp3.gif %}
 
 As you can see on that gif though, there's a problem here. Whenever the player enters the suspicious trigger area (yellow circle), the NPC doesn't become suspicious immediately. This is because he's still waiting for the *wait* action to be finished on the idle subtree, which means that he won't check the suspicious subtree until it ends. We want it to check this immediately, as soon as it happens, but using a normal selector that won't be possible.
 
@@ -543,7 +543,7 @@ end
 
 And now it should behave accordingly because it will always first check the suspicious subtree (since it's first on the list). Note that this is, in a way, parallelism. Although isn't real because it's doing each in sequence, for the purposes of the tree it is real, since what matters is what happens over multiple frames, and this makes it so that things happen in one frame simultaneously. For the threatened subtree I'll introduce yet another node called the Parallel, which does something similar to the active selector but has different success/failure logic.
 
-{% img center http://puu.sh/aXhxg/6dc2cdca41.gif %}
+{% img center /images/susp4.gif %}
 
 ## Threatened
 
@@ -551,7 +551,7 @@ For the threatened behavior the same active selector logic will apply. We need t
 
 {% img center /images/threatened-1.png %}
 
-{% img center http://puu.sh/aXkZB/58be60cd92.gif %}
+{% img center /images/threat3.gif %}
 
 Now what we wanna do is make it so that when the NPC is threatened, it chases the player around and tries to hit him if it gets close enough. One way of doing that is, after the *threatened* node, add a subtree that repeatedly chases and tries to hit the player while doing so:
 
@@ -686,7 +686,7 @@ And the final tree looks like this:
 
 {% img center /images/final-tree.png %}
 
-{% img center http://puu.sh/aXmA4/7dd6d91de2.gif %}
+{% img center /images/fight.gif %}
 
 ## END
 
