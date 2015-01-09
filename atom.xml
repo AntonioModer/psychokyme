@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://psychoky.me/"/>
-  <updated>2015-01-09T07:12:40.940Z</updated>
+  <updated>2015-01-09T07:16:05.050Z</updated>
   <id>http://psychoky.me/</id>
   
   <author>
@@ -19,8 +19,8 @@
     <link href="http://psychoky.me/2014/08/17/behavior-trees-number-2/"/>
     <id>http://psychoky.me/2014/08/17/behavior-trees-number-2/</id>
     <published>2014-08-17T06:46:00.000Z</published>
-    <updated>2015-01-09T07:03:26.000Z</updated>
-    <content type="html"><![CDATA[<p>The previous part of the tutorial went over the basics of behavior trees as well as their implementation. On this part we’re going to implement the behavior for an enemy.<a id="more"></a> The behavior is actually quite simple from a player/viewer standpoint, but it’s a nice way to introduce most concepts behind behavior trees.</p>
+    <updated>2015-01-09T07:15:52.000Z</updated>
+    <content type="html"><![CDATA[<p>This tutorial features a full implementation of behavior for an enemy using behavior trees.<a id="more"></a> The previous part of went over the basics of behavior trees as well as their implementation. So look there first if you somehow got here randomly. The enemy behavior we’re going to implement is actually quite simple from a player/viewer standpoint, but it’s a nice way to introduce most concepts behind behavior trees.</p>
 <p>The enemy is going to have three (3) main modes of behaving:</p>
 <ul>
 <li>Idle</li>
@@ -156,7 +156,7 @@
 <p>And that’s it! If you’ve followed through all this, even if just reading the explanations and code, you should have a nice idea of what behavior trees can do and how they do it. Hopefully this helped you in ways that I wanted to be helped when I was trying to understand all this. There are tons of issues with the way I’m doing it and there are tons of resources that go beyond what my implementation does, but since my game isn’t really memory nor performance intensive I can get away with the simple solution. The resources on the first paragraph of the first part mostly cover these issues.</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>The previous part of the tutorial went over the basics of behavior trees as well as their implementation. On this part we’re going to implement the behavior for an enemy.]]>
+    <![CDATA[<p>This tutorial features a full implementation of behavior for an enemy using behavior trees.]]>
     
     </summary>
     
@@ -169,8 +169,8 @@
     <link href="http://psychoky.me/2014/08/16/behavior-trees-number-1/"/>
     <id>http://psychoky.me/2014/08/16/behavior-trees-number-1/</id>
     <published>2014-08-17T00:05:00.000Z</published>
-    <updated>2015-01-09T06:46:52.000Z</updated>
-    <content type="html"><![CDATA[<p>There are very few behavior tree related tutorials out there that have both code examples as well as concise explanations. The best ones I could find are <a href="https://www.youtube.com/watch?v=n4aREFb3SsU" target="_blank" rel="external">here</a> and <a href="http://aigamedev.com/insider/presentations/behavior-trees/" target="_blank" rel="external">here</a>, and while they’re really good, when going through them I surely had many doubts that the lack of other decent tutorials didn’t help answering. With that in mind, this article provides another source that people can use as a reference as they learn about behavior trees. Part 1 (this one) will deal with explaining what behavior trees are and how you can implement them, while Part 2 will use them to build a simple yet complete enemy behavior. Most of the code used here uses <a href="https://github.com/aigamedev/btsk" target="_blank" rel="external">this</a> one as a reference with some slight changes. And I learned about behavior trees initially from <a href="http://www.gamasutra.com/blogs/ChrisSimpson/20140717/221339/Behavior_trees_for_AI_How_they_work.php" target="_blank" rel="external">this</a> article! Give it a quick read first, since I think it does a better job at explaining the basics than I do here.</p>
+    <updated>2015-01-09T07:14:09.000Z</updated>
+    <content type="html"><![CDATA[<p>This post explains behavior trees as I understood them.<a id="more"></a> There are very few behavior tree related tutorials out there that have both code examples as well as concise explanations. The best ones I could find are <a href="https://www.youtube.com/watch?v=n4aREFb3SsU" target="_blank" rel="external">here</a> and <a href="http://aigamedev.com/insider/presentations/behavior-trees/" target="_blank" rel="external">here</a>, and while they’re really good, when going through them I surely had many doubts that the lack of other decent tutorials didn’t help answering. With that in mind, this article provides another source that people can use as a reference as they learn about behavior trees. Part 1 (this one) will deal with explaining what behavior trees are and how you can implement them, while Part 2 will use them to build a simple yet complete enemy behavior. Most of the code used here uses <a href="https://github.com/aigamedev/btsk" target="_blank" rel="external">this</a> one as a reference with some slight changes. And I learned about behavior trees initially from <a href="http://www.gamasutra.com/blogs/ChrisSimpson/20140717/221339/Behavior_trees_for_AI_How_they_work.php" target="_blank" rel="external">this</a> article! Give it a quick read first, since I think it does a better job at explaining the basics than I do here.</p>
 <h2 id="Introduction">Introduction</h2>
 <p>Behavior Trees are used to describe the behavior of entities in a game in a hopefully intuitive manner. They do this by using the following definitions:</p>
 <ul>
@@ -252,7 +252,8 @@
 <img src="http://puu.sh/aVS8y/7bab5007e6.gif" class="center">
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>There are very few behavior tree related tutorials out there that have both code examples as well as concise explanations. The best ones ]]>
+    <![CDATA[<p>This post explains behavior trees as I understood them.]]>
+    
     </summary>
     
       <category term="ai" scheme="http://psychoky.me/tags/ai/"/>
