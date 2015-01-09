@@ -115,7 +115,7 @@ body {
   font-family: "Droid Sans", "Helvetica Neue", "Helvetica", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif;
   font-size: 100%;
   color: #5a5e5f;
-  line-height: 1.5;
+  line-height: 1.5em;
 }
 small {
   font-size: 80%;
@@ -462,7 +462,7 @@ body >header a {
   width: 100%;
   font-family: "covered_by_your_graceregular";
   font-size: 200%;
-  line-height: 1.5;
+  line-height: 1.5em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -565,7 +565,7 @@ header nav ul li a:hover {
   padding: 0.1em 0 0 1em;
 }
 .search input {
-  line-height: 1.7;
+  line-height: 1.7em;
   border: 1px solid #fff;
   color: #fff;
   background: transparent;
@@ -611,7 +611,7 @@ header nav ul li a:hover {
 }
 #main {
   margin: 1em 0 0;
-  line-height: 1.8;
+  line-height: 1.8em;
 }
 @media only screen and (min-width: 1024px) {
   #main {
@@ -652,7 +652,7 @@ header nav ul li a:hover {
 }
 #main section.post a h1 {
   color: #4d7bde;
-  line-height: 2;
+  line-height: 2em;
 }
 #main section.post a p {
   color: #5a5e5f;
@@ -832,7 +832,7 @@ header nav ul li a:hover {
 article header.article-info >h1 {
   padding: 0.2em 3%;
   font-size: 170%;
-  line-height: 1.5;
+  line-height: 1.5em;
   word-wrap: break-word;
   word-break: normal;
   -webkit-font-smoothing: antialiased;
@@ -891,7 +891,7 @@ article .article-content .kb {
   display: inline-block;
   margin: 0 0.1em;
   text-shadow: 0 1px 0 #fff;
-  line-height: 1.5;
+  line-height: 1.5em;
   white-space: nowrap;
 }
 article .article-content h1,
@@ -943,7 +943,7 @@ article .article-content blockquote {
   border-left: 0.2em solid #4d7bde;
   margin: 0.65em 0 0.65em 4%;
   padding-left: 1%;
-  line-height: 1.5;
+  line-height: 1.5em;
   font-size: 110%;
 }
 article .article-content blockquote footer {
@@ -997,7 +997,7 @@ article .article-content em code {
 }
 article .article-content p {
   font-size: 105%;
-  line-height: 1.7;
+  line-height: 1.7em;
   margin: 0.7em 0;
 }
 @media only screen and (min-width: 1024px) {
@@ -1753,7 +1753,7 @@ section.comment {
 }
 .linkslist ul a {
   font-size: 1em;
-  line-height: 1.5;
+  line-height: 1.5em;
   display: block;
   padding: 0 3%;
 }
@@ -1932,14 +1932,14 @@ footer {
   padding: 1em 2%;
   overflow: auto;
   color: #c5c8c6;
-  line-height: 1.5;
+  line-height: 1.5em;
   font-size: 100%;
 }
 .article-content .highlight .gutter pre,
 .article-content .gist .gist-file .gist-data .line-numbers {
   color: #666;
   font-size: 0.85em;
-  line-height: 1.5;
+  line-height: 1.5em;
   font-size: 100%;
 }
 .article-content pre {
